@@ -1,6 +1,6 @@
 const getTotalBalanceByGender = (users, gender) => {
   users
-    .fulter(user => user.gender === gender)
+    .filter(user => user.gender === gender)
     .map(user => user.balance)
     .reduce((total, balance) => {
       total + balance;
